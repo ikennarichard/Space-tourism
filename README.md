@@ -14,7 +14,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
+  - [🚀 Links](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -75,9 +75,10 @@ Space tourism is a gateway to the universe, welcome on board, you will find that
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Links <a name="live-demo"></a>
 
 [Live Demo](https://rich-bookstore.netlify.app/)
+[Add solution URL here](https://github.com/ikennarichard/Space-tourism)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
