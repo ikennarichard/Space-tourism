@@ -1,0 +1,131 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: url(/assets/home/background-home-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  padding-top: 5em;
+}
+
+.hero_section {
+  font-family: var(--barlow-condensed);
+  width: 40%;
+  color: hsl(var(--clr-light));
+}
+
+.herotext {
+  font-weight: 400;
+  font-size: 1rem;
+  width: 400px;
+}
+
+h1 {
+  appearance: none;
+  font-family: var(--bellefair);
+  font-size: 6rem;
+  font-weight: 400;
+  color: hsl(var(--clr-white));
+  letter-spacing: 2px;
+}
+
+.sub_heading {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+}
+
+.explore {
+  appearance: none;
+  text-align: center;
+  font-family: var(--bellefair);
+  font-weight: 400;
+  font-size: 1rem;
+  width: 150px;
+  height: 150px;
+  border: none;
+  background-color: hsl(var(--clr-white));
+  border-radius: 50%;
+  letter-spacing: 2px;
+  position: relative;
+  cursor: pointer;
+}
+
+.explore::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: hsl( var(--clr-white) / .2);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 500ms linear, transform 750ms ease-in-out;
+}
+
+.explore:hover::after {
+  opacity: 1;
+  transform: scale(1.5);
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    background: url(/assets/home/background-home-mobile.jpg) 
+    no-repeat center/cover;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+  .hero_section {
+   margin-top: -3em;
+   width: 100%;
+   text-align: center;
+  }
+
+  .herotext {
+    text-align: center;
+    width: 350px;
+    margin-inline: auto;
+    padding-inline: 1em;
+    font-size: 1.1rem;
+  }
+
+  .sub_heading {
+    margin-top: 4em;
+  }
+
+  .explore {
+    margin-top: 4em;
+  }
+}
+@media (min-width: 775px) and (max-width:992px) {
+  .wrapper {
+    background: url(/assets/home/background-home-tablet.jpg) 
+    no-repeat center/cover;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* gap: 3em; */
+    /* padding: ; */
+  }
+
+  .hero_section {
+   margin-top: -3em;
+   width: 100%;
+   text-align: center;
+  }
+
+  .herotext {
+    text-align: center;
+    width: 50%;
+    margin-inline: auto;
+    padding-inline: 1em;
+    font-size: 1.1rem;
+  }
+
+  .explore {
+    margin-top: -5em;
+  }
+}

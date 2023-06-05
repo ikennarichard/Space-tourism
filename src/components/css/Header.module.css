@@ -1,0 +1,101 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  padding-top: 0.6em;
+  z-index: 2;
+}
+
+.logo {
+  padding-left: 1em;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  background-color:  rgba(254, 254, 254, 0.125);
+  backdrop-filter: blur(-10px);
+  padding-inline: 2em;
+}
+
+.list li {
+  font-family: var(--barlow);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.list li > a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: border-color 0.5s ease;
+}
+
+.list li > a:hover {
+  border-bottom-color: white;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.navline {
+  display: none;
+}
+
+
+@media (min-width: 300px) and (max-width: 768px) {
+  .header {
+    padding-inline: 2em;
+  }
+
+  .list {
+    position: fixed;
+    overflow: hidden;
+    z-index: -1;
+    flex-direction: column;
+    background-color: black;
+    inset: 0;
+    gap: 1em;
+    width: 0%;
+    transition: width 0.5s ease;
+    padding: 0;
+  }
+
+  .list li > a {
+    color: white;
+  }
+
+  .navline {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .open {
+    width: 100%;
+  }  
+}
+
+@media (min-width: 992px) {
+  .navline {
+    display: block;
+    width: 350px;
+    position: absolute;
+    left: -18em;
+    top: 25px;
+  }
+
+  nav {
+    position: relative;
+  }
+}
