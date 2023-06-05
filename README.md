@@ -77,8 +77,8 @@ Space tourism is a gateway to the universe, welcome on board, you will find that
 
 ## 🚀 Links <a name="live-demo"></a>
 
-[Live Demo](https://rich-bookstore.netlify.app/)
-[Add solution URL here](https://github.com/ikennarichard/Space-tourism)
+- [Live Demo](https://rich-space.netlify.app/)
+- [Solution URL](https://github.com/ikennarichard/Space-tourism)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
