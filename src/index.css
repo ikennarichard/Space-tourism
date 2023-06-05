@@ -1,5 +1,44 @@
-/* general reset */
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400;700&display=swap');
 
-* {
+
+:root {
+  /* colors */
+  --clr-dark: 230 35% 7%;
+  --clr-light: 231 77% 90%;
+  --clr-white: 0 0% 100%;
+  /* fonts */
+  --barlow-font: 'Barlow', sans-serif;
+  --barlow-condensed: 'Barlow Condensed', sans-serif;
+  --bellefair: 'Bellefair', serif;
+}
+
+*, *::before, *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: var(--barlow-font);
+  font-size: 1.125rem;
+  color: hsl(var(--clr-white));
+}
+
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* remove animations for people that turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
