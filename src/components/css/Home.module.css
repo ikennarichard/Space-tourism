@@ -7,6 +7,7 @@
   background-size: 100% 100%;
   height: 100vh;
   padding-top: 5em;
+  overflow: hidden;
 }
 
 .hero_section {
@@ -90,30 +91,31 @@ h1 {
     margin-inline: auto;
     padding-inline: 1em;
     font-size: 1.1rem;
+    margin-top: -1em;
   }
 
   .sub_heading {
-    margin-top: 4em;
+    margin-top: 2em;
   }
 
   .explore {
-    margin-top: 4em;
+    /* margin-top: 4em; */
+    width: 120px;
+    height: 120px;
   }
 }
 @media (min-width: 775px) and (max-width:992px) {
   .wrapper {
     background: url(/assets/home/background-home-tablet.jpg) 
     no-repeat center/cover;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
-    /* gap: 3em; */
-    /* padding: ; */
+    flex-direction: row;
+    gap: 3em;
   }
 
   .hero_section {
    margin-top: -3em;
-   width: 100%;
+   /* width: 100%; */
+   flex: 1;
    text-align: center;
   }
 
@@ -126,6 +128,7 @@ h1 {
   }
 
   .explore {
-    margin-top: -5em;
+    margin-top: 3em;
+    margin-right: 1em;
   }
 }
