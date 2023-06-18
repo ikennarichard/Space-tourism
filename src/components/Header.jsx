@@ -17,17 +17,23 @@ export default function Header() {
       }
     }
 
-
-  useEffect(() => {
-    window.addEventListener('click', (e) => {
+    function closeMobileNav(e) {
       if (nav === 'open' && e.target.id === 'nav_menu' 
       || e.target.id === 'nav_link') 
       {
         setToggle('close');
         elem.current.classList.remove(`${s.open}`);
       }
-    })
-  }, [nav])
+    }
+
+
+  useEffect(() => {
+    // close mobile nav when you click on nav link or the nav_body
+    window.addEventListener('click', closeMobileNav)
+    return () => {
+      window.removeEventListener('click', closeMobileNav)
+    }
+  })
 
   return (
     <header className={s.header}>
